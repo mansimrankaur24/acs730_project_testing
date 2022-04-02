@@ -1,9 +1,8 @@
 name: Deploy Infrastructure
 
 on:
-  push:
-    branches:
-      - prod
+  pull_request:
+    branches: [ prod ]
 
 jobs:
   tf_fmt:
