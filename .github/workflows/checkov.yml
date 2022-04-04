@@ -3,6 +3,8 @@ name: Checkov
 on:
   pull_request:
     branches: [ prod ]
+  push:
+    branches: [ prod ]
     
 jobs:
   build:
